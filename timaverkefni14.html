@@ -88,8 +88,8 @@
             //  til að fá aðeins það sem þarf og for each til að birta hvert eintak
             //  og create element "li" til að birta titla í listann
             //  og append til að bæta við listann
-            const usersList = document.getElementById("post-list").slice(0, 5);
-            users.forEach((user) => {
+            const usersList = document.getElementById("post-list");
+            users.slice(0, 5).forEach((user) => {
               const li = document.createElement("li");
               li.textContent = user.body;
               usersList.appendChild(li);
